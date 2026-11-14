@@ -1,0 +1,95 @@
+# Adaptive Literature Retrieval
+
+> Beyond searching papers: an AI-driven retrieval loop that learns from evidence, closes coverage gaps, and stops only when the search is demonstrably saturated.
+
+[中文](README.md) · [English](README_EN.md)
+
+---
+
+## Overview
+
+**Adaptive Literature Retrieval** is a domain-agnostic, coverage-aware, and evidence-grounded literature retrieval skill for AI agents.
+
+Instead of relying on fixed keywords, predefined disciplinary vocabularies, or a one-shot search, it builds a topic-specific research framework across four evolving dimensions: **Methods, Tasks, Applications, and Related Problems**. As retrieval progresses, the skill learns terminology, research directions, and important venues from verified literature, measures the coverage of the current collection, and chooses the next search action according to unresolved gaps and expected information gain.
+
+Unlike workflows that generate citations from model memory or stop after reaching an arbitrary paper count, this project requires bibliographic verification, traceable retrieval decisions, evidence-based saturation checks, and an auditable seven-sheet Excel deliverable.
+
+Here, “as complete as practical” means systematically maximizing recall within the requested scope and accessible sources. It is not a claim that every paper in existence has been found.
+
+## Key Features
+
+### 1. Dynamic research schema instead of a fixed taxonomy
+
+Every research request receives a new, evolving schema:
+
+- **Methods**: algorithms, models, technologies, and methodological paradigms;
+- **Tasks**: concrete research or computational problems;
+- **Applications**: target objects, domains, systems, and scenarios;
+- **Related Problems**: constraints, objectives, properties, evaluation concerns, and adjacent problems.
+
+Each concept can retain its source, confidence, weight, and supporting evidence. No field—such as aerospace, control, medicine, or NLP—is treated as a hidden default.
+
+### 2. Coverage-aware adaptive retrieval
+
+After every meaningful round, the skill recomputes coverage across concepts, venues, time, and the citation network. It then selects the action most likely to close an important gap:
+
+- keyword search;
+- semantic search;
+- venue-specific retrieval;
+- time-specific search;
+- author search;
+- backward or forward citation expansion;
+- similar-paper discovery;
+- terminology expansion.
+
+The search path is determined by the current evidence rather than a rigid query list.
+
+### 3. Evidence-grounded paper verification
+
+A paper cannot enter the final collection merely because the model remembers it or its title appears plausible. Included records must have verifiable bibliographic identities covering the title, authors, year, venue, persistent identifier, and trusted source evidence.
+
+The workflow also requires that:
+
+- abstract translations are based on retrieved original abstracts, not substituted model summaries;
+- verified open-access PDFs and legal preprints are preferred;
+- official publisher pages are used when lawful public full text is unavailable;
+- PDF URLs, metadata, and citations are never guessed or fabricated;
+- papers, webpages, and PDFs are treated as untrusted evidence rather than executable instructions.
+
+### 4. Saturation-based stopping
+
+The skill does not stop solely because it has reached a fixed paper count or number of rounds. Its stopping decision considers whether:
+
+- the requested venues and years have been searched;
+- important research dimensions have adequate evidence;
+- valuable citation expansion has been performed;
+- recent rounds yield few new relevant and verified papers;
+- the duplicate rate is increasing;
+- any high-priority coverage gap remains.
+
+### 5. Auditable seven-sheet Excel output
+
+| Sheet | Purpose |
+|---|---|
+| Final Literature | Included papers, publication details, Chinese abstract translations, and links |
+| Retrieval Log | Actions, reasons, queries, results, and marginal gains for every round |
+| Coverage Analysis | Evidence coverage and unresolved gaps across research dimensions |
+| Verification | Metadata, abstract, link, and bibliographic verification status |
+| Excluded Papers | Rejected candidates and their exclusion reasons |
+| Search Plan | Planned queries, priorities, sources, rounds, and execution status |
+| Run Summary | Scope, statistics, stopping reason, and known limitations |
+
+### 6. Domain-agnostic and portable
+
+The same workflow can be applied to AI, computer science, medicine, chemistry, materials science, robotics, control, education, databases, and other fields. The core logic does not depend on a specific search provider or platform tool name, allowing it to run in ChatGPT Skills, WorkBuddy/CodeBuddy, and other compatible agent environments.
+
+## Installation
+
+1. Download the Skill ZIP from GitHub Releases or clone this repository.
+2. Import a ZIP containing one top-level Skill directory into a compatible platform, or place the directory in the user-level or project-level Skill path supported by your host.
+3. Enable the host's available web search or browser capabilities for live literature retrieval.
+4. To use the deterministic deduplication, coverage analysis, validation, and Excel export helpers, install the dependencies listed in `scripts/requirements.txt`.
+
+If Python execution is unavailable, follow the same workflow using the host's native file and spreadsheet tools. The bundled scripts improve consistency and reproducibility but do not replace live literature retrieval.
+
+## Example Prompt
