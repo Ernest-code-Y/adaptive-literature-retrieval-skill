@@ -153,7 +153,7 @@ Skill 将依次完成主题拆解、动态期刊会议发现、多策略检索�
 }
 ```
 
-如引用特定 Release，可在条目中补充版本号。若未来提供归档 DOI，请优先引用与实际使用版本对应的 DOI。
+
 
 ### 设计边界
 
@@ -278,7 +278,7 @@ If this project supports your research, please cite it in papers, reports, or so
 }
 ```
 
-When citing a specific release, add its version to the entry. If an archival DOI becomes available, cite the DOI corresponding to the exact version used.
+
 
 ### Limitations
 
