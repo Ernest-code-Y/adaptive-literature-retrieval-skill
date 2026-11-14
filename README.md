@@ -141,18 +141,19 @@ Skill 将依次完成主题拆解、动态期刊会议发现、多策略检索�
 
 如果本项目对你的研究有帮助，请在论文、报告或软件成果中引用：
 
-> Adaptive Literature Retrieval Contributors. (2026). *Adaptive Literature Retrieval: A coverage-aware and evidence-grounded literature retrieval skill for AI agents* [Computer software].
+> Ernest-code-Y. (2026). *Adaptive Literature Retrieval: A coverage-aware and evidence-grounded literature retrieval skill for AI agents* [Computer software]. GitHub. [https://github.com/Ernest-code-Y/adaptive-literature-retrieval-skill](https://github.com/Ernest-code-Y/adaptive-literature-retrieval-skill)
 
 ```bibtex
 @software{adaptive_literature_retrieval_2026,
-  author = {{Adaptive Literature Retrieval Contributors}},
+  author = {{Ernest-code-Y}},
   title  = {Adaptive Literature Retrieval: A Coverage-Aware and Evidence-Grounded Literature Retrieval Skill for AI Agents},
   year   = {2026},
+  url    = {https://github.com/Ernest-code-Y/adaptive-literature-retrieval-skill},
   note   = {Domain-agnostic adaptive literature retrieval with gap-driven search, evidence verification, and auditable outputs}
 }
 ```
 
-仓库正式发布后，可在上述条目中补充版本号、GitHub URL 或归档 DOI。若发布版本提供 DOI，请优先引用对应版本的 DOI。
+如引用特定 Release，可在条目中补充版本号。若未来提供归档 DOI，请优先引用与实际使用版本对应的 DOI。
 
 ### 设计边界
 
@@ -265,18 +266,19 @@ retrieved abstracts into Chinese, verify all links, and export the results to Ex
 
 If this project supports your research, please cite it in papers, reports, or software outputs:
 
-> Adaptive Literature Retrieval Contributors. (2026). *Adaptive Literature Retrieval: A coverage-aware and evidence-grounded literature retrieval skill for AI agents* [Computer software].
+> Ernest-code-Y. (2026). *Adaptive Literature Retrieval: A coverage-aware and evidence-grounded literature retrieval skill for AI agents* [Computer software]. GitHub. [https://github.com/Ernest-code-Y/adaptive-literature-retrieval-skill](https://github.com/Ernest-code-Y/adaptive-literature-retrieval-skill)
 
 ```bibtex
 @software{adaptive_literature_retrieval_2026,
-  author = {{Adaptive Literature Retrieval Contributors}},
+  author = {{Ernest-code-Y}},
   title  = {Adaptive Literature Retrieval: A Coverage-Aware and Evidence-Grounded Literature Retrieval Skill for AI Agents},
   year   = {2026},
+  url    = {https://github.com/Ernest-code-Y/adaptive-literature-retrieval-skill},
   note   = {Domain-agnostic adaptive literature retrieval with gap-driven search, evidence verification, and auditable outputs}
 }
 ```
 
-Once the repository is published, add the release version, GitHub URL, or archival DOI to this entry. If a release DOI is available, cite the DOI for the exact version used.
+When citing a specific release, add its version to the entry. If an archival DOI becomes available, cite the DOI corresponding to the exact version used.
 
 ### Limitations
 
