@@ -145,7 +145,7 @@ Skill 将依次完成主题拆解、动态期刊会议发现、多策略检索�
 
 ```bibtex
 @software{adaptive_literature_retrieval_2026,
-  author = {{Ernest-code-Y}},
+  author = {{Ernest SongYu}},
   title  = {Adaptive Literature Retrieval: A Coverage-Aware and Evidence-Grounded Literature Retrieval Skill for AI Agents},
   year   = {2026},
   url    = {https://github.com/Ernest-code-Y/adaptive-literature-retrieval-skill},
@@ -270,7 +270,7 @@ If this project supports your research, please cite it in papers, reports, or so
 
 ```bibtex
 @software{adaptive_literature_retrieval_2026,
-  author = {{Ernest-code-Y}},
+  author = {{Ernest SongYu}},
   title  = {Adaptive Literature Retrieval: A Coverage-Aware and Evidence-Grounded Literature Retrieval Skill for AI Agents},
   year   = {2026},
   url    = {https://github.com/Ernest-code-Y/adaptive-literature-retrieval-skill},
